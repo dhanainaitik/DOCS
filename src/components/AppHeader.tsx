@@ -73,14 +73,14 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
         {/* App Logo */}
         <div 
           className="flex items-center gap-1.5 p-1 rounded hover:bg-docs-hover cursor-pointer transition-colors"
-          title="Docs Document Editor"
+          title="Read Document Editor"
         >
           <div className="w-8 h-9 bg-blue-600 rounded-sm flex items-center justify-center shadow-sm relative overflow-hidden group">
             <FileText className="w-5 h-5 text-white" strokeWidth={2.2} />
             <div className="absolute top-0 right-0 w-2.5 h-2.5 bg-blue-300 rounded-bl-sm opacity-90" />
           </div>
           <span className="font-semibold text-lg text-slate-800 tracking-tight hidden sm:inline ml-0.5">
-            Docs
+            Read
           </span>
         </div>
 

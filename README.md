@@ -1,8 +1,8 @@
-# Docs — Professional Document Editor
+# Read — Professional Document Editor
 
-Docs is a polished, professional, responsive frontend document editor inspired by Google Docs, built with React, Vite, TypeScript, Tailwind CSS, and TipTap (ProseMirror).
+Read is a polished, professional, responsive frontend document editor inspired by Google Docs, built with React, Vite, TypeScript, Tailwind CSS, and TipTap (ProseMirror).
 
-![Docs Document Editor](public/favicon.svg)
+![Read Document Editor](public/favicon.svg)
 
 ## Features
 

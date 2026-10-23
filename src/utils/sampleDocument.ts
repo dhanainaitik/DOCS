@@ -1,6 +1,6 @@
 export const SAMPLE_DOCUMENT_HTML = `
-<h1>Product Requirements: Project Docs</h1>
-<p>Docs is a <strong>modern, responsive, high-performance word processor</strong> designed for seamless web editing. It combines the familiar productivity ergonomics of classic document suites with a fast, distraction-free interface.</p>
+<h1>Product Requirements: Project Read</h1>
+<p>Read is a <strong>modern, responsive, high-performance word processor</strong> designed for seamless web editing. It combines the familiar productivity ergonomics of classic document suites with a fast, distraction-free interface.</p>
 
 <h2>1. Core Design Principles</h2>
 <p>To provide a first-class writing environment, the interface is anchored around four key tenets:</p>
@@ -20,9 +20,9 @@ export const SAMPLE_DOCUMENT_HTML = `
 
 <h3>Code &amp; Monospace Formatting</h3>
 <p>For technical and specification documents, inline code and dedicated blocks are available:</p>
-<pre><code>// Example Docs storage sync handler
+<pre><code>// Example Read storage sync handler
 const handleContentSave = (doc) => {
-  localStorage.setItem('docs_doc', JSON.stringify(doc));
+  localStorage.setItem('read_doc', JSON.stringify(doc));
 };</code></pre>
 
 <h2>3. Next Milestones</h2>
@@ -31,5 +31,5 @@ const handleContentSave = (doc) => {
   <li>Collaborative cursor synchronization and comments.</li>
   <li>Export to PDF and EPUB formats.</li>
 </ol>
-<p>Enjoy writing with <strong>Docs</strong>!</p>
+<p>Enjoy writing with <strong>Read</strong>!</p>
 `;
