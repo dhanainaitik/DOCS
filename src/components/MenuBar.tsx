@@ -498,7 +498,7 @@ export const MenuBar: React.FC<MenuBarProps> = ({
             <div className="px-3 py-2 text-[11px] text-slate-500 flex flex-col gap-1">
               <span className="font-semibold text-slate-700 flex items-center gap-1.5">
                 <HelpCircle className="w-3.5 h-3.5 text-blue-500" />
-                Docs Editor v1.0
+                Read Editor v1.0
               </span>
               <span>Fast, responsive frontend document processor built with React & TipTap.</span>
             </div>
