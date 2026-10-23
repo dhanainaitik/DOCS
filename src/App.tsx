@@ -52,7 +52,7 @@ export const App: React.FC = () => {
 
   // Update browser document title
   useEffect(() => {
-    document.title = `${title || 'Untitled document'} — Draftly`;
+    document.title = `${title || 'Untitled document'} — Docs`;
   }, [title]);
 
   const extractHeadings = useCallback((editorInstance: Editor): HeadingItem[] => {
@@ -171,7 +171,7 @@ export const App: React.FC = () => {
       editor.commands.setContent(SAMPLE_DOCUMENT_HTML);
       editor.commands.focus();
       updateStatsAndOutline(editor);
-      updateTitle('Project Requirements: Project Draftly');
+      updateTitle('Project Requirements: Project Docs');
     }
   }, [editor, updateStatsAndOutline, updateTitle]);
 

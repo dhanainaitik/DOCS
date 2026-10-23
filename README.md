@@ -1,8 +1,8 @@
-# Draftly — Professional Document Editor
+# Docs — Professional Document Editor
 
-Draftly is a polished, professional, responsive frontend document editor inspired by Google Docs, built with React, Vite, TypeScript, Tailwind CSS, and TipTap (ProseMirror).
+Docs is a polished, professional, responsive frontend document editor inspired by Google Docs, built with React, Vite, TypeScript, Tailwind CSS, and TipTap (ProseMirror).
 
-![Draftly Document Editor](public/favicon.svg)
+![Docs Document Editor](public/favicon.svg)
 
 ## Features
 
