@@ -2,15 +2,19 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import type { SaveStatus } from '../types/document';
 
 const STORAGE_KEYS = {
-  TITLE: 'draftly_title_v1',
-  STARRED: 'draftly_starred_v1',
-  CONTENT: 'draftly_content_v1',
+  TITLE: 'docs_title_v1',
+  STARRED: 'docs_starred_v1',
+  CONTENT: 'docs_content_v1',
 };
 
 export function useDocumentStorage() {
   const [title, setTitleState] = useState<string>(() => {
     try {
-      return localStorage.getItem(STORAGE_KEYS.TITLE) || 'Untitled document';
+      return (
+        localStorage.getItem(STORAGE_KEYS.TITLE) ||
+        localStorage.getItem('draftly_title_v1') ||
+        'Untitled document'
+      );
     } catch {
       return 'Untitled document';
     }
@@ -18,7 +22,8 @@ export function useDocumentStorage() {
 
   const [isStarred, setIsStarredState] = useState<boolean>(() => {
     try {
-      return localStorage.getItem(STORAGE_KEYS.STARRED) === 'true';
+      const val = localStorage.getItem(STORAGE_KEYS.STARRED) ?? localStorage.getItem('draftly_starred_v1');
+      return val === 'true';
     } catch {
       return false;
     }
@@ -26,7 +31,7 @@ export function useDocumentStorage() {
 
   const [initialContent] = useState<string>(() => {
     try {
-      const saved = localStorage.getItem(STORAGE_KEYS.CONTENT);
+      const saved = localStorage.getItem(STORAGE_KEYS.CONTENT) ?? localStorage.getItem('draftly_content_v1');
       if (saved !== null) return saved;
       return '';
     } catch {
